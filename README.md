@@ -1,1 +1,2 @@
-Android Studio Practices - with Kotlin
+The 친절한 코틀린 앱 프로그래밍 (정재곤 저, 책장)
+각 장의 연습문제(Kotlin study 00)에 대한 풀이입니다.
