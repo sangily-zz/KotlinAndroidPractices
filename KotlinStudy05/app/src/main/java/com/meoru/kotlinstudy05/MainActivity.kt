@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
 	private lateinit var mycar:Car
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 		binding.benz.setOnClickListener {mycar = Benz(binding.myCar.text.toString())}
 		binding.BMW.setOnClickListener {mycar = BMW(binding.myCar.text.toString())}
 		binding.checkCarButton.setOnClickListener {
-			if (this::mycar.isInitialized) {
+			if (::mycar.isInitialized) {
 				if (mycar is Benz) {
 					binding.checkText.setText("차종 : Benz")
 				} else {
